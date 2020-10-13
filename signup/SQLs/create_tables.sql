@@ -1,3 +1,5 @@
+<!-- create tables for signup -->
+
 CREATE TABLE signup (
     signup_id INT(11) NOT NULL AUTO_INCREMENT,
     login VARCHAR(50) NOT NULL DEFAULT '',
@@ -12,4 +14,17 @@ CREATE TABLE signup (
     UNIQUE KEY confirm_code (confirm_code),
     UNIQUE KEY user_login (login),
     UNIQUE KEY email (email)
+);
+
+
+CREATE TABLE user (
+    user_id INT(11) NOT NULL AUTO_INCREMENT,
+    login VARCHAR(50) NOT NULL DEFAULT '',
+    password VARCHAR(50) NOT NULL DEFAULT '',
+    email VARCHAR(50) DEFAULT NULL,
+    firstname VARCHAR(50) DEFAULT NULL,
+    lastname VARCHAR(50) DEFAULT NULL,
+    signature TEXT NOT NULL,
+    PRIMARY KEY (signup_id),
+    UNIQUE KEY user_login (login)
 );

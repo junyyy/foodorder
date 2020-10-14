@@ -19,7 +19,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6a861f12-f529-4aa5-94f5-5a1a19f3b0a9" name="Default Changelist" comment="" />
+    <list default="true" id="6a861f12-f529-4aa5-94f5-5a1a19f3b0a9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/restaurant/foodorderConfig.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restaurant/mysqlConnect.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,11 +42,13 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
   <component name="ProjectId" id="1iXoIaZRaAeKBbgFn1ebdFSAJye" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -50,11 +57,15 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/restaurant" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Files\projects\PhpstormProjects\foodorder\restaurant" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Files\projects\PhpstormProjects\foodorder\signup" />
     </key>
@@ -74,7 +85,8 @@
       <workItem from="1602303098043" duration="4271000" />
       <workItem from="1602321363365" duration="1857000" />
       <workItem from="1602547947809" duration="3977000" />
-      <workItem from="1602555440950" duration="7772000" />
+      <workItem from="1602555440950" duration="8207000" />
+      <workItem from="1602667768943" duration="1553000" />
     </task>
     <servers />
   </component>
@@ -91,6 +103,12 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/.." />
+    </ignored-roots>
   </component>
   <component name="WindowStateProjectService">
     <state x="349" y="67" key="#CLI_Interpreters" timestamp="1602135337380">
@@ -109,14 +127,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="523" y="133" key="NewPhpClassDialog/0.0.1536.824@0.0.1536.824" timestamp="1602556801290" />
-    <state x="599" y="335" key="NewPhpFileDialog" timestamp="1602556760904">
+    <state x="599" y="335" key="NewPhpFileDialog" timestamp="1602668835147">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="599" y="335" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1602556760904" />
-    <state x="270" y="57" key="SettingsEditor" timestamp="1602551649522">
+    <state x="599" y="335" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1602668835147" />
+    <state x="270" y="57" key="SettingsEditor" timestamp="1602667850494">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="270" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1602551649522" />
+    <state x="270" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1602667850494" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1602291925879">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

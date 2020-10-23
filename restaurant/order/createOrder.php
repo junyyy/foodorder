@@ -46,37 +46,37 @@
 
             <tr>
                 <td><input class="food_name" name="food_1" type=text></td>
-                <td><input name="quantity_1" type="number" value="1" min="1"></td>
+                <td><input name="quantity_1" type="number"  min="1"></td>
                 <td><input name="note_1" type="text"></td>
             </tr>
             <tr>
                 <td><input class="food_name" name="food_2" type=text></td>
-                <td><input name="quantity_2" type="number" value="1" min="1"></td>
+                <td><input name="quantity_2" type="number"  min="1"></td>
                 <td><input name="note_2" type="text"></td>
             </tr>
             <tr>
                 <td><input class="food_name" name="food_3" typ class="food_name" =text></td>
-                <td><input name="quantity_3" type="number" value="1" min="1"></td>
+                <td><input name="quantity_3" type="number"  min="1"></td>
                 <td><input name="note_3" type="text"></td>
             </tr>
             <tr>
                 <td><input class="food_name" name="food_4" type=text></td>
-                <td><input name="quantity_4" type="number" value="1" min="1"></td>
+                <td><input name="quantity_4" type="number"  min="1"></td>
                 <td><input name="note_4" type="text"></td>
             </tr>
             <tr>
                 <td><input class="food_name" name="food_5" type=text></td>
-                <td><input name="quantity_5" type="number" value="1" min="1"></td>
+                <td><input name="quantity_5" type="number"  min="1"></td>
                 <td><input name="note_5" type="text"></td>
             </tr>
             <tr>
                 <td><input class="food_name" name="food_6" type=text></td>
-                <td><input name="quantity_6" type="number" value="1" min="1"></td>
+                <td><input name="quantity_6" type="number"  min="1"></td>
                 <td><input name="note_6" type="text"></td>
             </tr>
             <tr>
                 <td><input class="food_name" name="food_7" type=text></td>
-                <td><input name="quantity_7" type="number" value="1" min="1"></td>
+                <td><input name="quantity_7" type="number"  min="1"></td>
                 <td><input name="note_7" type="text"></td>
             </tr>
         </table>

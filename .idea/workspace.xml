@@ -19,16 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6a861f12-f529-4aa5-94f5-5a1a19f3b0a9" name="Default Changelist" comment="create display order page">
-      <change afterPath="$PROJECT_DIR$/restaurant/config/restaurantConfig.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/restaurant/order/confirmOrder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/restaurant/order/createOrder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/restaurant/order/generateOrderId.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/restaurant/order/redirect.js" afterDir="false" />
+    <list default="true" id="6a861f12-f529-4aa5-94f5-5a1a19f3b0a9" name="Default Changelist" comment="create confirm order">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/test.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/test.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/restaurant/foodorderConfig.php" beforeDir="false" afterPath="$PROJECT_DIR$/restaurant/config/dbConfig.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/restaurant/mysqlConnect.php" beforeDir="false" afterPath="$PROJECT_DIR$/restaurant/mysqlConnect.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurant/order/confirmOrder.php" beforeDir="false" afterPath="$PROJECT_DIR$/restaurant/order/confirmOrder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurant/order/createOrder.php" beforeDir="false" afterPath="$PROJECT_DIR$/restaurant/order/createOrder.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +95,8 @@
       <workItem from="1603188978233" duration="4177000" />
       <workItem from="1603236156103" duration="4747000" />
       <workItem from="1603321052357" duration="199000" />
-      <workItem from="1603411203094" duration="7588000" />
+      <workItem from="1603411203094" duration="8169000" />
+      <workItem from="1603422890887" duration="10194000" />
     </task>
     <task id="LOCAL-00001" summary="create display order page">
       <created>1602669381224</created>
@@ -123,7 +119,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603191686578</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="create confirm order">
+      <created>1603419215056</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1603419215056</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -146,7 +149,8 @@
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
     <MESSAGE value="create display order page" />
-    <option name="LAST_COMMIT_MESSAGE" value="create display order page" />
+    <MESSAGE value="create confirm order" />
+    <option name="LAST_COMMIT_MESSAGE" value="create confirm order" />
   </component>
   <component name="WindowStateProjectService">
     <state x="349" y="67" key="#CLI_Interpreters" timestamp="1602135337380">
@@ -173,10 +177,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="270" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1602667850494" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1603191697038">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1603419219805">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1603191697038" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1603419219805" />
     <state x="425" y="187" key="run.anything.popup" timestamp="1602677187180">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

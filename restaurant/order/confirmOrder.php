@@ -1,9 +1,5 @@
 <?php
 
-
-
-
-
 function confirm() {
     echo '<script language="javascript">';
     $msg = 'Table: ' . $_POST['table'] . '  Order Confirmed';
@@ -12,6 +8,5 @@ function confirm() {
     echo '</script>';
 }
 confirm();
-
 
 ?>

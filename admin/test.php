@@ -1,26 +1,35 @@
-<?php
-include_once 'config.php';
-$dsn = 'mysql:host='.HOST.'; dbname='.DBNAME.';';
-$user = USER;
-$password = PASSWORD;
-$id = '2 or 1=1';
-$lastname = 'asdf';
-$firstname = 'asdfg';
-$ttt=null;
-echo var_dump($ttt);
-try {
-    $dbh = new PDO($dsn, $user, $password);
-    $sql = 'SELECT * from Persons WHERE PersonID=' . $dbh->quote($id);
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    </head>
+    <body>
+        <table border="1px">
+            <tr>
+                <th>id</th>
+                <th>name</th>
+                <th>age</th>
+            </tr>
+            <?php
+            for($i = 0; $i < 10; $i++):?>
+            <tr>
 
-    foreach ($dbh->query($sql) as $row) {
+                <?php
+                echo "<td>A</td>";
+                echo "<td>$i</td>";
+                echo "<td>X</td>";
+                ?>
 
-    }
+            </tr>
+            <?php endfor?>
+        </table>
+
+
+
+    </body>
+
+</html>
 
 
 
 
-} catch (PDOException $e) {
-    echo 'Connection failed: '. $e->getMessage();
-}
-
-?>

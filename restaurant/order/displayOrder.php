@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf8">
     <title>Display Orders</title>
-    <link rel="stylesheet" type="text/css" href="display.css">
+    <link rel="stylesheet" type="text/css" href="../style/display.css">
 </head>
 
 <body>
@@ -13,15 +13,9 @@
     </div>
     <hr>
     <?php
-    include_once 'mysqlConnect.php';
-//    $sql = 'select * from order';
-//    $stmt = $dbh->prepare($sql);
-//    echo var_dump($stmt);
-//    while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-//        echo $row;
-//        print $row['order_id'] . "\n";
-//        print "here";
-//    }
+    $path = $_SERVER['DOCUMENT_ROOT'];
+    $pathConn = $path . "/restaurant/mysqlConnect.php";
+    include_once $pathConn;
 
     ?>
     <div class="orderBlock">

@@ -1,10 +1,8 @@
 <?php
 $path = $_SERVER['DOCUMENT_ROOT'];
 $path .= "/restaurant/config/dbConfig.php";
-echo $path;
 include_once $path;
 
-echo $path;
 $dsn = 'mysql:host='.HOST.'; dbname='.DBNAME.';';
 $user = USER;
 $password = PASSWORD;

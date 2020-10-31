@@ -7,8 +7,6 @@
             alignment: center
         }
 
-
-
         .inputDiv > * {
             line-height: 150%;
             margin: 2px 2px;
@@ -16,9 +14,17 @@
             alignment: left;
         }
 
+        ::placeholder {
+            opacity: 0.5;
+        }
+
+
         .autocomplete {
             position: relative;
             display: inline-block;
+
+
+
         }
 
         .autocomplete-items {
@@ -35,7 +41,7 @@
         .autocomplete-items div {
             padding: 10px;
             cursor: pointer;
-            background-color: #fff;
+            background-color: #ffffff;
             border-bottom: 1px solid #d4d4d4;
         }
 
@@ -53,6 +59,7 @@
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="autocomplete.js"></script>
 
 </head>
 
@@ -71,115 +78,90 @@
     while ($row = $stmt->fetch()) {
         array_push($foodNames, $row['name']);
     }
+    foreach ($foodNames as $name) {
+        echo $name . "<br>";
+    }
     ?>
 
-<!--the script aims to auto-complete the input food names-->
-    <script type="text/javascript">
-        var foodNames = <?php echo json_encode($foodNames); ?>;
-        function autocomplete(inp, arr) {
-            let currentFocus;
-            inp.addEventListener("input", function(e) {
-               let a, b, i, val = this.val;
-               closeAllLists();
-               if (!val) {return false;}
-               currentFocus = -1;
-               a = document.createElement("div");
-               a.setAttribute("id", this.id + "autocomplete-list");
-               a.setAttribute("class", "autocomplete-items");
-               this.parentNode.appendChild(a);
-               for (i = 0; i < arr.length; i++) {
 
-               }
-
-
-
-
-                function closeAllLists(element) {
-                    let x = document.getElementByClassName("autocomplete-items");
-                    for (let i = 0; i < x.length; i++) {
-                        if (element != x[i] && element != inp) {
-                            x[i].parentNode.removeChild(x[i]);
-                        }
-                    }
-                }
-
-            });
-        }
-
-
-    </script>
     <button onclick="addItem()">Add more</button>
-    <form id="form", method="post" onsubmit="if(!confirm('Confirm?')){return false;}" action="confirmOrder.php">
+    <form id="form", autocomplete="off" method="post" onsubmit="if(!confirm('Confirm?')){return false;}" action="confirmOrder.php">
         <h1>Order</h1>
         <p id="p_order_head">
             Table <input name="table" type="number" required="required" min="1" max= <?php echo MAX_TABLE ?>>
         </p>
 
         <div id="divOrder">
-            <div class="inputDiv">
-                <input name="food_1" type=text>
-                <input name="quantity_1" type="number"  min="1">
-                <input name="note_1" type="text">
-                <a href="#" class="removeLink">Remove</a>
-                <br>
-            </div>
-
-            <div class="inputDiv">
-                <input name="food_2" type=text>
-                <input name="quantity_2" type="number"  min="1">
-                <input name="note_2" type="text">
-                <a href="#" class="removeLink">Remove</a>
-                <br>
-            </div>
-
-            <div class="inputDiv">
-                <input name="food_3" type=text>
-                <input name="quantity_3" type="number"  min="1">
-                <input name="note_3" type="text">
+            <div class="autocomplete">
+                <input id="f1", name="food_1" type=text placeholder="Food">
+                <input name="quantity_1" type="number" min="1" placeholder="Quantity">
+                <input name="note_1" type="text" placeholder="Note">
                 <a href="#" class="removeLink">Remove</a>
                 <br>
             </div>
         </div>
-
-
         <input value="Submit" type="submit">
     </form>
 
-
+    <p id="test"></p>
     <script>
+        var num = 2;
         function addItem() {
-            var num = 4;
             let nameInput = document.createElement("input");
-            nameInput.name = "food_" + num;
-            nameInput.type = "text";
+            let id = "f" + num;
+            nameInput.setAttribute("id", id);
+            nameInput.setAttribute("name", "food_" + num);
+            nameInput.setAttribute("type", "text");
+            nameInput.setAttribute("placeholder", "Food");
+
             let quantityInput = document.createElement("input");
-            quantityInput.name = "quantity_" + num;
-            quantityInput.type = "number";
-            quantityInput.min = "1";
+            quantityInput.setAttribute("name", "quantity_" + num);
+            quantityInput.setAttribute("type", "number");
+            quantityInput.setAttribute("min", "1");
+            quantityInput.setAttribute("placeholder", "Quantity");
+
+
+
             let noteInput = document.createElement("input");
-            noteInput.name = "note_" + num;
-            noteInput.type = "text";
+            noteInput.setAttribute("name", "note_" + num);
+            noteInput.setAttribute("type", "text");
+            noteInput.setAttribute("placeholder", "Note");
+
             let removeLink= document.createElement("a");
             removeLink.href = "#";
             removeLink.className = "removeLink";
             removeLink.text = "Remove";
             let mainDiv = document.getElementById("divOrder");
             let div = document.createElement("div");
-            div.className = "inputDiv";
-            mainDiv.appendChild(div);
+            div.setAttribute("class", "autocomplete");
             div.appendChild(nameInput);
+            div.insertAdjacentHTML('beforeend', " ");
             div.appendChild(quantityInput);
+            div.insertAdjacentHTML('beforeend', " ");
             div.appendChild(noteInput);
+            div.insertAdjacentHTML('beforeend', " ");
             div.appendChild(removeLink);
 
+
+            mainDiv.appendChild(div);
+
+            autocomplete(document.getElementById(id), foodNames);
+            console.log("the id is: " + id);
             num++;
+            console.log("the num is: " + num);
+
         }
 
        $("#form").on("click", "a", function (event) {
-           console.log($(this).text());
            $(this).parent().remove();
        });
+
+
+        let foodNames = <?php echo json_encode($foodNames); ?>;
+        autocomplete(document.getElementById("f1"), foodNames);
+
     </script>
+
 
 
 </body>

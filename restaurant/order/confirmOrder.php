@@ -5,9 +5,6 @@ $pathConn = $path . "/restaurant/mysqlConnect.php";
 include_once $pathConn;
 
 
-
-
-
 function insertIntoDB() {
     // generate a current id
     $sql_get_max = 'SELECT max(id) FROM order_id_log';

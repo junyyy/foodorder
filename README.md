@@ -10,7 +10,7 @@ The manager can add, delete, update, select the foods information, such as name,
 
 ### 2. order foods
 The customers can order foods in a webpage. The food names can be auto-completed to ease the processes.   
-The current interface looks like:![structure](src/add food.png) 
+The current interface looks like:![structure](src/add_food.png) 
 
 The food order information will be stored in the database after confirmation.
 

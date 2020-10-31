@@ -19,11 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6a861f12-f529-4aa5-94f5-5a1a19f3b0a9" name="Default Changelist" comment="debug confirm order">
-      <change afterPath="$PROJECT_DIR$/src/add food.png" afterDir="false" />
+    <list default="true" id="6a861f12-f529-4aa5-94f5-5a1a19f3b0a9" name="Default Changelist" comment="1. update create table SQL;&#10;2. add pics and update README.md">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/restaurant/create_tables.sql" beforeDir="false" afterPath="$PROJECT_DIR$/restaurant/create_tables.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,15 +65,15 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Files\projects\PhpstormProjects\foodorder\restaurant\css" />
-      <recent name="D:\Files\projects\PhpstormProjects\foodorder\restaurant\order" />
-      <recent name="D:\Files\projects\PhpstormProjects\foodorder\src" />
-      <recent name="D:\Files\projects\PhpstormProjects\foodorder\restaurant\config" />
-      <recent name="D:\Files\projects\PhpstormProjects\foodorder\signup" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Files\projects\PhpstormProjects\foodorder\restaurant" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Files\projects\PhpstormProjects\foodorder\src" />
+      <recent name="D:\Files\projects\PhpstormProjects\foodorder\restaurant\css" />
+      <recent name="D:\Files\projects\PhpstormProjects\foodorder\restaurant\order" />
+      <recent name="D:\Files\projects\PhpstormProjects\foodorder\restaurant\config" />
+      <recent name="D:\Files\projects\PhpstormProjects\foodorder\signup" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -113,7 +110,7 @@
       <workItem from="1603924309811" duration="160000" />
       <workItem from="1604096350658" duration="6749000" />
       <workItem from="1604117377062" duration="7058000" />
-      <workItem from="1604132919172" duration="9371000" />
+      <workItem from="1604132919172" duration="10054000" />
     </task>
     <task id="LOCAL-00001" summary="create display order page">
       <created>1602669381224</created>
@@ -185,7 +182,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604142921408</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="1. update create table SQL;&#10;2. add pics and update README.md">
+      <created>1604143808141</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1604143808141</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -216,7 +220,8 @@
     <MESSAGE value="add now functions" />
     <MESSAGE value="add autocomplete and some refactor" />
     <MESSAGE value="debug confirm order" />
-    <option name="LAST_COMMIT_MESSAGE" value="debug confirm order" />
+    <MESSAGE value="1. update create table SQL;&#10;2. add pics and update README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="1. update create table SQL;&#10;2. add pics and update README.md" />
   </component>
   <component name="WindowStateProjectService">
     <state x="349" y="67" key="#CLI_Interpreters" timestamp="1602135337380">
@@ -247,10 +252,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="270" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1602667850494" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1604142931141">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1604143818020">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1604142931141" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1604143818020" />
     <state x="425" y="187" key="run.anything.popup" timestamp="1602677187180">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

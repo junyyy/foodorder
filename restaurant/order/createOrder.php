@@ -7,6 +7,13 @@
             alignment: center
         }
 
+        form {
+            border: #000000 2px;
+            position: fixed;
+            width: 70%;
+
+        }
+
         .inputDiv > * {
             line-height: 150%;
             margin: 2px 2px;
@@ -53,6 +60,13 @@
             color: #ffffff;
         }
 
+        button {
+            left:150px;
+            top:75px;
+            position: relative;
+        }
+
+
 
 
     </style>
@@ -78,13 +92,10 @@
     while ($row = $stmt->fetch()) {
         array_push($foodNames, $row['name']);
     }
-    foreach ($foodNames as $name) {
-        echo $name . "<br>";
-    }
     ?>
 
 
-    <button onclick="addItem()">Add more</button>
+
     <form id="form", autocomplete="off" method="post" onsubmit="if(!confirm('Confirm?')){return false;}" action="confirmOrder.php">
         <h1>Order</h1>
         <p id="p_order_head">
@@ -93,17 +104,16 @@
 
         <div id="divOrder">
             <div class="autocomplete">
-                <input id="f1", name="food_1" type=text placeholder="Food">
-                <input name="quantity_1" type="number" min="1" placeholder="Quantity">
+                <input id="f1", name="food_1" type=text placeholder="Food" required="required">
+                <input name="quantity_1" type="number" min="1" placeholder="Quantity" required="required">
                 <input name="note_1" type="text" placeholder="Note">
                 <a href="#" class="removeLink">Remove</a>
-                <br>
             </div>
         </div>
-        <input value="Submit" type="submit">
+        <input id="submitBtn" value="Submit" type="submit">
     </form>
 
-    <p id="test"></p>
+    <button onclick="addItem()">Add</button>
     <script>
         var num = 2;
         function addItem() {
@@ -113,13 +123,14 @@
             nameInput.setAttribute("name", "food_" + num);
             nameInput.setAttribute("type", "text");
             nameInput.setAttribute("placeholder", "Food");
+            nameInput.setAttribute("required", "required");
 
             let quantityInput = document.createElement("input");
             quantityInput.setAttribute("name", "quantity_" + num);
             quantityInput.setAttribute("type", "number");
             quantityInput.setAttribute("min", "1");
             quantityInput.setAttribute("placeholder", "Quantity");
-
+            quantityInput.setAttribute("required", "required");
 
 
             let noteInput = document.createElement("input");
@@ -141,8 +152,6 @@
             div.appendChild(noteInput);
             div.insertAdjacentHTML('beforeend', " ");
             div.appendChild(removeLink);
-
-
             mainDiv.appendChild(div);
 
             autocomplete(document.getElementById(id), foodNames);

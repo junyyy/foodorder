@@ -19,8 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6a861f12-f529-4aa5-94f5-5a1a19f3b0a9" name="Default Changelist" comment="add now functions">
-      <change afterPath="$PROJECT_DIR$/restaurant/order/autocomplete.js" afterDir="false" />
+    <list default="true" id="6a861f12-f529-4aa5-94f5-5a1a19f3b0a9" name="Default Changelist" comment="add autocomplete and some refactor">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/restaurant/order/confirmOrder.php" beforeDir="false" afterPath="$PROJECT_DIR$/restaurant/order/confirmOrder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/restaurant/order/createOrder.php" beforeDir="false" afterPath="$PROJECT_DIR$/restaurant/order/createOrder.php" afterDir="false" />
@@ -68,15 +67,15 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Files\projects\PhpstormProjects\foodorder\restaurant" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Files\projects\PhpstormProjects\foodorder\restaurant\css" />
       <recent name="D:\Files\projects\PhpstormProjects\foodorder\restaurant\order" />
       <recent name="D:\Files\projects\PhpstormProjects\foodorder\src" />
       <recent name="D:\Files\projects\PhpstormProjects\foodorder\restaurant\config" />
       <recent name="D:\Files\projects\PhpstormProjects\foodorder\signup" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Files\projects\PhpstormProjects\foodorder\restaurant" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -112,7 +111,8 @@
       <workItem from="1603880450662" duration="4179000" />
       <workItem from="1603924309811" duration="160000" />
       <workItem from="1604096350658" duration="6749000" />
-      <workItem from="1604117377062" duration="5441000" />
+      <workItem from="1604117377062" duration="7058000" />
+      <workItem from="1604132919172" duration="8329000" />
     </task>
     <task id="LOCAL-00001" summary="create display order page">
       <created>1602669381224</created>
@@ -170,7 +170,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603884120906</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="add autocomplete and some refactor">
+      <created>1604123135638</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1604123135638</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -199,7 +206,8 @@
     <MESSAGE value="add pics" />
     <MESSAGE value="add pics and md" />
     <MESSAGE value="add now functions" />
-    <option name="LAST_COMMIT_MESSAGE" value="add now functions" />
+    <MESSAGE value="add autocomplete and some refactor" />
+    <option name="LAST_COMMIT_MESSAGE" value="add autocomplete and some refactor" />
   </component>
   <component name="WindowStateProjectService">
     <state x="349" y="67" key="#CLI_Interpreters" timestamp="1602135337380">
@@ -230,10 +238,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="270" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1602667850494" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1603884125245">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1604123150706">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1603884125245" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1604123150706" />
     <state x="425" y="187" key="run.anything.popup" timestamp="1602677187180">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
